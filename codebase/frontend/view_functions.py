@@ -1,6 +1,6 @@
 import requests
 
-ROOT_URL = 'localhost:5000'
+ROOT_URL = 'http://127.0.0.1:5000'
 TRACKS_URL = f"{ROOT_URL}/tracks"
 
 def get_tracks():
