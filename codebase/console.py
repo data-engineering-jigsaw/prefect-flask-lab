@@ -1,7 +1,8 @@
 from sqlalchemy import text
 
 from api.models.track import Track
-from db import cursor, engine, find_all
+from api.src.db import cursor, find_all
+from db import engine
 from etl.spotify_extractor.listings_adapter import *
 
 # playlist_id = "37i9dQZEVXbLRQDuF5jeBp"
@@ -12,4 +13,4 @@ from etl.spotify_extractor.listings_adapter import *
 # load_to_postgres(tracks_df, engine)
 # write_to_csv(tracks)
 
-tracks = find_all(Track, cursor)
+# tracks = find_all(Track, cursor)
