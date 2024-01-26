@@ -52,7 +52,7 @@ def drop_tables(table_names, cursor, conn):
         drop_records(cursor, conn, table_name)
 
 def drop_all_tables(conn, cursor):
-    table_names = ['venue_categories', 'locations', 'zipcodes', 'cities', 'states', 'categories', 'venues']
+    table_names = ['tracks']
     drop_tables(table_names, cursor, conn)
 
 def find_by_name(Class, name, cursor):
