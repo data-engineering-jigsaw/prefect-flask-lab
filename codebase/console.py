@@ -1,7 +1,7 @@
 from sqlalchemy import text
 
-from api.models.track import Track
-from api.src.db import cursor, find_all
+from api.db import cursor, find_all
+from api.src.models.track import Track
 from db import engine
 from etl.spotify_extractor.listings_adapter import *
 
